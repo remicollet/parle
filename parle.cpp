@@ -3145,11 +3145,11 @@ PHP_MINIT_FUNCTION(parle)
 #endif
 
 	INIT_CLASS_ENTRY(ce, "Parle\\LexerException", NULL);
-	ParleLexerException_ce = zend_register_internal_class_ex(&ce, zend_exception_get_default());
+	ParleLexerException_ce = zend_register_internal_class_ex(&ce, zend_ce_exception);
 	INIT_CLASS_ENTRY(ce, "Parle\\ParserException", NULL);
-	ParleParserException_ce = zend_register_internal_class_ex(&ce, zend_exception_get_default());
+	ParleParserException_ce = zend_register_internal_class_ex(&ce, zend_ce_exception);
 	INIT_CLASS_ENTRY(ce, "Parle\\StackException", NULL);
-	ParleStackException_ce = zend_register_internal_class_ex(&ce, zend_exception_get_default());
+	ParleStackException_ce = zend_register_internal_class_ex(&ce, zend_ce_exception);
 
 	REGISTER_NS_BOOL_CONSTANT("Parle", "INTERNAL_UTF32", PARLE_U32, CONST_PERSISTENT | CONST_CS);
 
