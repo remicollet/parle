@@ -43,10 +43,10 @@ do {
 	case Parser::ACTION_REDUCE:
 		//echo "Trace: ", $par->trace(), PHP_EOL;
 		switch ($par->reduceId) {
-			case $prod_0;
+			case $prod_0:
 				echo " Match: '", $par->sigil(0), "', token: '", substr($in, $lex->marker, $lex->cursor - $lex->marker), "'", PHP_EOL;
 				break;
-			case $prod_1;
+			case $prod_1:
 				echo " Match: '", $par->sigil(1), "', token: '", substr($in, $lex->marker, $lex->cursor - $lex->marker), "'", PHP_EOL;
 				break;
 		}
